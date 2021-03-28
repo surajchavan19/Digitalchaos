@@ -1,0 +1,28 @@
+{%extends "base.html"%}
+{%block title%}View All Users{%endblock%}
+{%block content%}
+
+  <html>
+      <head>
+         <link rel="stylesheet" href="style2.css">
+         <script src="website\static\js\index.js"></script>
+      </head>
+      <body>
+          <div id="container" class="box">
+              <div id="input_div">
+                  <input type="text" name="" id="input" placeholder="tell us your problem">
+                  <input type="file" src="" alt="">
+              </div>
+              <div id="fop_text">
+                  <p>Frequently occuring problems</p>
+                  <div id="fop">
+                      <div onclick="showmap1()" id= "puncture"> Puncture</div>
+                  <div onclick="showmap2()" id= "outOfFuel" > Out of fuel</div>
+                  <div  onclick="showmap3()" id= "batteryDead"> Battery dead</div>
+                  </div>
+              </div>
+          </div>
+      </body>
+ </html>
+
+{%endblock%}

@@ -1,0 +1,37 @@
+{%extends "base.html"%}
+{%block title%}Login page{%endblock%}
+
+{%block content%}
+{% with messages=get_flashed_messages() %}
+{%if messages%}
+{%for msg in messages%}
+<p>{{msg}}</p>
+{%endfor%}
+{%endif%}
+{%endwith%}
+
+
+<link rel= "stylesheet" type="text/css" href= "{{ url_for('static',filename='style/style.css') }}">
+
+<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+  <div class="wrapper wrapper--w780">
+    <div class="card card-3">
+      <div class="card-heading"></div>
+      <div class="card-body">
+        <h2 class="title">Your Name</h2>
+        <form action="#" method="post">
+          <br><br><br>
+          <div class="input-group">
+            <input class="input--style-3" type="text" name="nm" placeholder="Name" >
+          </div>
+          <br><br><br>
+          <div class="p-t-10">
+            <button class="btn btn--pill btn--green" type="submit" value="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%endblock%}

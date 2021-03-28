@@ -1,0 +1,32 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.title{
+    font-size: 300%;
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+.inline-flex {
+    height:80%;
+width:80%;
+}
+.vehicle-text{
+    text-align: center;
+}
+.column{
+
+   height: 40%;
+    text-align: center;
+}
+.row1{
+    margin-top: 5%;
+    margin-right: 10%;
+    text-align: center;
+
+}
+.row2{
+    margin-top: 1.5%;
+    margin-right: 6%;
+}

@@ -1,0 +1,49 @@
+
+{%extends "base.html"%}
+{%block title%}View All Users{%endblock%}
+{%block content%}
+
+ <html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href="\website\static\css\tailwind.css">
+        <link rel= "stylesheet" type= "text/css" href="\website\static\css\style.css">
+        <script src= "\website\static\js\index.js"></script>
+        <h1 class="title text-blue-500"> Digital Chaos</h1>
+    </head>
+    <body>
+
+        <div class= "row1">
+            <h2 class="text-2xl text-green-800">Choose your vehicle</h2>
+        </div>
+        <div class="row2">
+            <div class= "column">
+
+                    <div class= "inline-flex gap-10">
+                        <div onclick= "bike()" class="flex-1 twoWheeler bg-green-100 bg-contain rounded-lg text-green-800 ">
+                            <img src="\static\image\bike.jpeg">
+                            <h2 class= "vehicle-text" id="Two-wheeler"> Two- Wheeler</h2>
+                        </div>
+                        <div onclick="car()" class="flex-1 car bg-green-100 bg-center rounded-lg text-green-800">
+                            <img src="\static\images\car4.jpeg">
+                            <h2 class= "vehicle-text" id="car">Car</h2>
+                        </div>
+                        <div onclick="truck()" class="flex-1 truck bg-green-100 bg-center rounded-lg text-green-800">
+                            <img src="\static\images\truck.jpeg">
+                            <h2 class= "vehicle-text" id="truck">Truck</h2>
+                        </div>
+                        <div onclick="bus()" class="flex-1 bus bg-green-100 bg-center rounded-lg text-green-800">
+                            <img src="\static\images\bus.jpeg ">
+                            <h2 class= "vehicle-text" id="bus">Bus</h2>
+                        </div>
+                    </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </body>
+</html>
+{%endblock%}
